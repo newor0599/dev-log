@@ -1,0 +1,43 @@
+#discord{
+    animation: fadeIn .8s ease-out forwards;
+    opacity: 0;
+}
+
+#discord{
+    animation: fadeIn .8s ease-out forwards;
+    opacity: 0;
+}
+
+#hp{
+    animation: fadeIn .8s ease-out forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+
+#git{
+    animation: fadeIn .8s ease-out forwards;
+    animation-delay: .4s;
+    opacity: 0;
+}
+
+#codepen{
+    animation: fadeIn .8s ease-out forwards;
+    animation-delay: .6s;
+    opacity: 0;
+}
+
+.inf{
+    box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.inf:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 10px #909dbd;
+    border-radius: 10px;
+}

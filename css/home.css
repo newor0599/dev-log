@@ -1,0 +1,144 @@
+img{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#greet{
+  font-size:50px;
+  padding:10px;
+  font-family: var(--font);
+  color: var(--text-color);
+  animation: fadeIn .8s ease forwards;
+  margin: 10px;
+  justify-self:save;
+  text-align: center;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+  border-radius: 20px;
+}
+
+#bar{
+  display: flex;
+  background-color: rgba(255,255,255,.2);
+  font-family: var(--font);
+  color: var(--text-color);
+  justify-self: stretch;
+  border-radius: 50px;
+  margin: 10px;
+  position: sticky;
+  top:10px;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+#bar > p{
+  transition: .3s ease-out;
+}
+
+.to{
+  margin: 15px;
+  margin-left: 20px;
+  border-radius: 2px;
+}
+
+
+
+.focus{
+  border-bottom: 3px solid rgb(255, 129, 27);
+  color: rgb(255, 129, 27);
+  animation: swipe .3s forwards ease-out;
+}
+
+@keyframes swipe{
+  from{
+      transform: scaleY(.3);
+  }
+  to{
+      transform: scaleY(1);
+  }
+}
+
+
+#mars{
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  animation: spin 20s linear infinite;
+  overflow-x: hidden;
+  object-fit: cover;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#lang-frame{
+  opacity: 0;
+  border-radius: 50px;
+  /*box-shadow: 0px 0px 21px 22px rgba(214,214,214,0.75) inset;*/
+  background: transparent;
+  width: auto;
+  padding: 15px;
+  margin: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn .8s ease forwards;
+  animation-delay: .1s;
+  font-family: var(--font);
+  color: var(--text-color);
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+  border-radius: 20px;
+}
+
+
+#lang{
+  font-size: 30px;
+  margin: 0;
+}
+
+#lang-frame>p{
+  font-size: 30px;
+  display: block;
+  margin: 0;
+}
+
+#bar>p:hover{
+  cursor:pointer;
+}
+
+#help-code{
+  opacity: 0;
+  animation: fadeIn .8s ease forwards;
+  animation-delay: .3s;
+  font-family: var(--font);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px;
+}
+
+#focus-web-dev{
+  opacity: 0;
+  animation: fadeIn .8s ease forwards;
+  animation-delay: .2s;
+  font-family: var(--font);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px;
+}

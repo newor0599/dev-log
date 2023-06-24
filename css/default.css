@@ -1,1 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+body{
+    height:100dvh;
+    background-image: url("../image/space2.jpg");
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0;
+}
 
+img{
+    -webkit-user-drag: none;
+}
+
+/*basic css*/
+p{
+    color:var(--text-color);
+    font-family: var(--font);
+}
+
+p:hover{
+    cursor: default;
+}
+
+p::selection{
+    background-color: #f8ae80;
+    color: #1c4364;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --text-color:rgb(222 222 222);
+    --font: 'Quicksand', sans-serif;
+}
+
+#bar{
+    display: flex;
+    background-color: rgba(255,255,255,.2);
+    font-family: var(--font);
+    color: var(--text-color);
+    justify-self: stretch;
+    border-radius: 50px;
+    margin: 10px;
+    position: sticky;
+    top:10px;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.75);
+}
+
+#bar > p{
+    transition: .3s ease-out;
+}
+
+.to{
+    margin: 15px;
+    margin-left: 20px;
+}
+
+.focus{
+    border-bottom: 3px solid #447f9f;
+    color: #447f9f;
+    border-radius: 2px;
+    animation: swipe .3s forwards ease-out;
+}
+
+@keyframes swipe{
+    from{
+        transform: scaleY(.3);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+#bar>p:hover{
+    cursor:pointer;
+    opacity: .5;
+}
+
+@keyframes fadeIn{
+    from{
+      opacity:0;
+      transform:translateY(-15px);
+    }
+    to{
+      opacity:1;
+      transform:translateY(0px);
+    } 
+  }
+  
+@keyframes hover{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
