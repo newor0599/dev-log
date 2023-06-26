@@ -25,5 +25,12 @@
     </div>
     <p id="focus-web-dev">Focusing on web development</p>
     <p id="help-code">Happy to help you code your school project</p>
+    <p id="visit-counter">Visited: 0</p>
+    <script>
+      function cb(response) {
+          document.getElementById('visit-counter').innerText = `Visited: ${response.value}`;
+      }
+      </script>
+      <script async src="https://api.countapi.xyz/hit/https://newor0599.github.io/dev-log/html/home.html/visits?callback=cb"></script>
   </body>
 </html>
