@@ -31,12 +31,6 @@ discord.onclick = function(){
     setTimeout(() => {discord.innerText = "Discord: newor0910"}, 1000);
 }
 
-hp.onclick = function(){
-    navigator.clipboard.writeText("01156718436");
-    hp.innerText = "Phone number copied!";
-    setTimeout(() => {hp.innerText = "Phone number: 01156718436"}, 1000);
-}
-
 git.onclick = function(){
     window.open("https://github.com/newor0599")
 }

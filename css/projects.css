@@ -16,14 +16,6 @@
     transition: box-shadow .6s;
     transition: .3s;
     opacity: 0;
-}
-
-.web{
-    animation: fadeIn .8s ease forwards;
-    animation-delay: .2s;
-}
-
-.IDE{
     animation: fadeIn .8s ease forwards;
     animation-delay: .2s;
 }
