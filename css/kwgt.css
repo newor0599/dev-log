@@ -1,66 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-*{
-    margin:0;
-    padding:0;
-    border:none;
-    transition: .6s ease;
-    font-family: 'Quicksand', sans-serif;
-    color:#ddd;
-}
-body{
-    display:flex;
-    height:100dvh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(24,24,24,1) 6%, rgba(0,0,0,1) 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition: .5s ease-out;
+  font-family: 'Quicksand', sans-serif;
+  color: #ddd;
 }
 
-img{
-    border-radius: 1rem;
-    box-shadow: 0 0 10px 2px #191919;
-    height:70%;
-    transition: .3s ease;
-    margin:10px;
-}
-img:hover{
-    transform: scale(1.05);
+body {
+  display: flex;
+  height: 100dvh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(31, 31, 31, 1) 0%, rgba(24, 24, 24, 1) 6%, rgba(0, 0, 0, 1) 100%);
 }
 
-a{
-    padding:10px;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    color:#ddd;
-    background-color:#222;
-    margin:10px;
-    border-radius: 1rem;
-}
-a:hover{
-    color:#111;
-    background:#999;
+img {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 2px #191919;
+  height: 70%;
+  transition: .3s cubic-bezier(.37, -0.68, .34, 1.37);
+  margin: 10px;
 }
 
-.buttons{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+img:hover {
+  transform: scale(1.05);
 }
 
-.desc{
-    background:none;
+a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #ddd;
+  background-color: #222;
+  margin: 10px;
+  border-radius: 1rem;
 }
-.desc:hover{
-    background:none;
-    color:#ddd;
-    cursor: default;
+
+a:hover {
+  color: #111;
+  background: #999;
 }
-@media (min-width:960px){
-    body{
-	flex-direction: row;
-    }
-    .buttons{
-	align-items: flex-start;
-    }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc {
+  background: none;
+}
+
+.desc:hover {
+  background: none;
+  color: #ddd;
+  cursor: default;
+}
+
+@media (min-width:960px) {
+  body {
+    flex-direction: row;
+  }
+
+  .buttons {
+    align-items: flex-start;
+  }
+}
+
+::selection {
+  color: #111;
+  background: #ddd;
 }
